@@ -3,11 +3,21 @@
 
 #include "base.hpp"
 
+using namespace std;
+
 class Op : public Base {
     public:
-        Op(double value) : Base() { }
-        virtual double evaluate() { return 0.0; }
-        virtual std::string stringify() { return ""; }
+        Op(double value) : Base() { 
+		val = value;
+	}
+        virtual double evaluate() { return val; }
+        virtual std::string stringify() {
+		string str;
+		str = to_string(val);
+		return str; 
+	}
+    private:
+	double val;
 };
 
 #endif //__OP_HPP__
