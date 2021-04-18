@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-
+#include "rand_test.hpp"
 #include "add_test.hpp"
 #include "op_test.hpp"
 
