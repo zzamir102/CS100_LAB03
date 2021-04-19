@@ -14,5 +14,4 @@ class SevenEightMultMock: public Base {
         virtual string stringify() { return "7.000000 * 8.000000"; }
 };
 
-
 #endif
