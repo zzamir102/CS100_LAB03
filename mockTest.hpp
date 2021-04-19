@@ -1,3 +1,5 @@
+#ifndef __MOCK_TEST_HPP__
+#define __MOCK_TEST_HPP__
 
 #include <string>
 #include "base.hpp"
@@ -11,3 +13,5 @@ class SevenEightMultMock: public Base {
         virtual double evaluate() { return (7.0*8.0); }
         virtual string stringify() { return "7.000000 * 8.000000"; }
 };
+
+#endif
